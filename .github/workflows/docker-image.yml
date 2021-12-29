@@ -1,0 +1,31 @@
+name: 
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag barclaysacr02.azurecr.io/k8s-app-siddhant:latest
+    
+    - name: Azure Container Registry Login
+      uses: Azure/docker-login@v1
+      with:
+        # Container registry username
+        username: barclaysacr02
+        # Container registry password
+        password: AFnp+BILCUFnV9EuVTr9sxOBt/KqS=yU
+        # Container registry server url
+        login-server: barclaysacr02.azurecr.io
+        
+    - name: Docker Push
+      run: docker push barclaysacr02.azurecr.io/k8s-app-siddhant:latest
