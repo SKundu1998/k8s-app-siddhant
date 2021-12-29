@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jHGh/vwcA44Oc31d07z0cg2/aFzI3zDdUPe51sBkcJeFJbCxEqCcGjilX8NRsOdTtyRUxNvl8PnFBkdkrm7JAw==",
+  "success": true,
+  "projectFilePath": "/home/rafa/TShapedEngineering/CloudNative/k8s-app-siddhant/k8s-app-siddhant.csproj",
+  "expectedPackageFiles": [
+    "/home/rafa/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/rafa/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/rafa/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/rafa/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/rafa/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/rafa/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-app-siddhant
+spec:
+  selector:
+    matchLabels:
+      app: k8s-app-siddhant-pod
+  template:
+    metadata:
+      labels:
+        app: k8s-app-siddhant-pod
+    spec:
+      containers:
+      - name: k8s-app-siddhant-container
+        image: <Image>
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
