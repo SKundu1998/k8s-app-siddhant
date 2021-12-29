@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: k8s-app-siddhant-container
-        image: <Image>
+        image: barclaysacr02.azurecr.io/k8s-app-siddhant:latest
         resources:
           limits:
             memory: "128Mi"
